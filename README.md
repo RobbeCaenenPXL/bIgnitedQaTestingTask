@@ -21,9 +21,9 @@ Alternatively, if you prefer using Yarn, execute:
 yarn install
 ```
 
-### Running Cypress
+### Running Cypress Interactively
 
-To launch the Cypress Test Runner, use the following command with npm:
+To launch the Cypress Test Runner for interactive test runs, use the following command with npm:
 
 ```bash
 npx cypress open
@@ -35,9 +35,21 @@ Or with Yarn:
 yarn run cypress open
 ```
 
-## Running Tests
+## Running Tests in Headless Mode
 
-With the Cypress Test Runner open, you will be able to execute the tests through a browser of your choice. The runner provides a user-friendly interface for selecting and running individual test files.
+For headless test execution without the Cypress UI, use the command:
+
+```bash
+npm run cypress run
+```
+
+Or with Yarn:
+
+```bash
+yarn cypress run
+```
+
+This will run the tests in a headless Electron browser by default. You can specify a different browser using the `--browser` flag if needed.
 
 ## Test Files Overview
 
